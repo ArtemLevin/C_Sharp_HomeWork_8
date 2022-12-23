@@ -61,9 +61,7 @@ void SearchForMinSumRowNumber(int[,] array)
             if (sumOfElementsInRow < minSum)
             {
                 minSum = sumOfElementsInRow;
-                numberOfMinSumRow = i;
-                Console.WriteLine($"Sum = {minSum}, row number = {numberOfMinSumRow}");
-                
+                numberOfMinSumRow = i; 
             }
         }
 
