@@ -31,9 +31,9 @@ void PrintArray(int[,] array)
     }
 }
 
-Console.Write("Enter the number or rows...");
+Console.Write("Enter the number of rows...");
 int rows = int.Parse(Console.ReadLine()!);
-Console.Write("Enter the number or columns..");
+Console.Write("Enter the number of columns..");
 int columns = int.Parse(Console.ReadLine()!);
 Console.WriteLine(" ");
 int[,] array = new int[rows, columns];
@@ -53,7 +53,7 @@ void SearchForMinSumRowNumber(int[,] array)
 
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            sumOfElementsInRow += array[i, j]; // считаем сумму элемнетов в каждой строке       
+            sumOfElementsInRow += array[i, j]; // считаем сумму элементов в каждой строке       
         }
         if (i == 0) minSum = sumOfElementsInRow;
         else
